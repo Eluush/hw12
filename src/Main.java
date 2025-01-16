@@ -10,31 +10,31 @@ public class Main {
         quietDon.setYear(1932);
         System.out.println("quietDon.setYear() = " + quietDon.getYear());
 
-        System.out.println("sholokhov.nameAuthor = " + sholokhov.nameAuthor);
-        System.out.println("sholokhov.surnameAuthor = " + sholokhov.surnameAuthor);
+        System.out.println("sholokhov.getNameAuthor() = " + sholokhov.getNameAuthor());
+        System.out.println("sholokhov.getSurnameAuthor() = " + sholokhov.getSurnameAuthor());
 
         //1
-        Author1 zuzak = new Author1("Маркус" ,"Зузак");
-        Book1 theBookThier = new Book1("Книжный вор",zuzak,2006);
-        System.out.println("theBookThier.getTitle1() = " + theBookThier.getTitle1());
-        System.out.println("theBookThier.getAuthor1() = " + theBookThier.getAuthor1());
-        System.out.println("theBookThier.getYear1() = " + theBookThier.getYear1());
-        theBookThier.setYear1(2000);
-        System.out.println("theBookThier.getYear1() = " + theBookThier.getYear1());
+        Author zuzak = new Author("Маркус" ,"Зузак");
+        Book theBookThier = new Book("Книжный вор",zuzak,2006);
+        System.out.println("theBookThier.getTitle1() = " + theBookThier.getTitle());
+        System.out.println("theBookThier.getAuthor1() = " + theBookThier.getAuthor());
+        System.out.println("theBookThier.getYear1() = " + theBookThier.getYear());
+        theBookThier.setYear(2000);
+        System.out.println("theBookThier.getYear1() = " + theBookThier.getYear());
 
-        System.out.println("zuzak.nameAuthor = " + zuzak.nameAuthor1);
-        System.out.println("zuzak.surnameAuthor = " + zuzak.surnameAuthor1);
+        System.out.println("zuzak.getNameAuthor() = " + zuzak.getNameAuthor());
+        System.out.println("zuzak.getSurnameAuthor() = " + zuzak.getSurnameAuthor());
 
 
         //2
-        Author2 tolstoy = new Author2("Лев","Толстой");
-        Book2 annaKarenina = new Book2("Анна Каренина",tolstoy,1877);
-        System.out.println("annaKarenina.getTitle() = " + annaKarenina.getTitle2());
-        System.out.println("annaKarenina.getAuthor2() = " + annaKarenina.getAuthor2());
-        System.out.println("annaKarenina.getYear2() = " + annaKarenina.getYear2());
+        Author tolstoy = new Author("Лев","Толстой");
+        Book annaKarenina = new Book("Анна Каренина",tolstoy,1877);
+        System.out.println("annaKarenina.getTitle() = " + annaKarenina.getTitle());
+        System.out.println("annaKarenina.getAuthor2() = " + annaKarenina.getAuthor());
+        System.out.println("annaKarenina.getYear2() = " + annaKarenina.getYear());
 
-        System.out.println("tolstoy.getNameAutho2() = " + tolstoy.getNameAuthor2());
-        System.out.println("tolstoy.getSurnameAuthor2() = " + tolstoy.getSurnameAuthor2());
+        System.out.println("tolstoy.getNameAutho2() = " + tolstoy.getNameAuthor());
+        System.out.println("tolstoy.getSurnameAuthor2() = " + tolstoy.getSurnameAuthor());
 
 
     }
