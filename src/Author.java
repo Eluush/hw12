@@ -23,8 +23,24 @@ public class Author {
         this.surname = surnameAuthor;
 
     }
-    public String toString() {
-        return name + " " + surname;
+
+
+    @Override
+    public String toString(){
+        return "Имя -" + this.name + " Фамилия -" + this.surname;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Author author = (Author) obj;
+        return name.equals(author.name) && surname.equals(author.surname);
+    }
+    @Override
+    public int hashCode(){
+        return java.util.Objects.hash(name) + java.util.Objects.hash(surname);
+
     }
 
 }
